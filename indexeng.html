@@ -1,0 +1,128 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>8-Bit Chiptune Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>8-BIT CHiPTUNE</h1>
+
+    <div class="subtitle">
+        TURN YOUR MUSIC INTO RETRO 8-BIT SOUND
+    </div>
+
+
+    <div id="dropZone">
+        CLICK HERE OR DRAG &amp; DROP<br>
+        MP3 / WAV
+    </div>
+
+    <input
+        id="fileInput"
+        type="file"
+        accept="audio/*"
+    >
+
+    <div id="fileName"></div>
+
+
+    <canvas id="visualizer"></canvas>
+
+
+    <div id="catArea">
+        <div id="cat"> /\_/\\
+( o.o )
+ &gt; ^ &lt;</div>
+    </div>
+
+
+    <div class="settings">
+
+        <div class="setting">
+
+            <label>
+                BIT DEPTH
+                <span class="value" id="bitValue">
+                    4 BIT
+                </span>
+            </label>
+
+            <input
+                id="bitDepth"
+                type="range"
+                min="2"
+                max="8"
+                value="4"
+            >
+
+        </div>
+
+
+        <div class="setting">
+
+            <label>
+                RETRO EFFECT
+                <span class="value" id="retroValue">
+                    70%
+                </span>
+            </label>
+
+            <input
+                id="retro"
+                type="range"
+                min="0"
+                max="100"
+                value="70"
+            >
+
+        </div>
+
+
+        <div class="setting">
+
+            <label>
+                DOWNSAMPLE
+                <span class="value" id="downsampleValue">
+                    4X
+                </span>
+            </label>
+
+            <input
+                id="downsample"
+                type="range"
+                min="1"
+                max="12"
+                value="4"
+            >
+
+        </div>
+
+
+        <div class="setting">
+
+            <label>
+                PITCH
+                <span class="value" id="pitchValue">
+                    0 SEMITONES
+                </span>
+            </label>
+
+            <input
+                id="pitch"
+                type="range"
+                min="-12"
+                max="12"
+                step="1"
+                value="0"
+            >
+
+        </div>
+```
